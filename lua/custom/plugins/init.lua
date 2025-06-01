@@ -3,34 +3,12 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  -- lazy.nvim
-  {
-    'folke/noice.nvim',
-    event = 'VeryLazy',
-    opts = {
-      -- add any options here
-    },
-    dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-      'MunifTanjim/nui.nvim',
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
-      'rcarriga/nvim-notify',
-    },
-  },
-  {
-    'rebelot/kanagawa.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'kanagawa'
-    end,
-  },
-  {
-    'max397574/better-escape.nvim',
-    config = function()
-      require('better_escape').setup()
-    end,
-  },
+  require 'custom.plugins.auto-tag',
+  require 'custom.plugins.colorscheme',
+  require 'custom.plugins.escape',
+  require 'custom.plugins.trouble',
+  require 'custom.plugins.noice',
+  require 'custom.plugins.inline-diag',
+  require 'custom.plugins.lazygit',
+  require 'custom.plugins.lualine',
 }
