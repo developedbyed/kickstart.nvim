@@ -3,7 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  require 'custom.plugins.flash',
+  require 'custom.plugins.dashboard',
   require 'custom.plugins.auto-tag',
   require 'custom.plugins.colorscheme',
   require 'custom.plugins.escape',
@@ -13,6 +13,5 @@ return {
   require 'custom.plugins.lazygit',
   require 'custom.plugins.lualine',
   require 'custom.plugins.smear',
-  require 'custom.plugins.precognition',
   require 'custom.plugins.typr',
 }

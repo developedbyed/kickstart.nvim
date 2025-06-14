@@ -162,6 +162,10 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+vim.opt.tabstop = 4
+
+vim.opt.list = false
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -742,8 +746,8 @@ require('lazy').setup({
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
-        typescript = { 'prettierd' },
-        typescriptreact = { 'prettierd' },
+        typescript = { 'biome' },
+        typescriptreact = { 'biome' },
       },
     },
   },
@@ -889,6 +893,7 @@ require('lazy').setup({
       -- - sd'   - [S]urround [D]elete [']quotes
       -- - sr)'  - [S]urround [R]eplace [)] [']
       require('mini.surround').setup()
+      -- Setup mappings for sd (delete) and sr (replace)
     end,
   },
   { -- Highlight, edit, and navigate code
