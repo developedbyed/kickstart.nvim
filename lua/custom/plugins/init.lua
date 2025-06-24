@@ -5,7 +5,6 @@
 return {
   require 'custom.plugins.dashboard',
   require 'custom.plugins.auto-tag',
-  require 'custom.plugins.colorscheme',
   require 'custom.plugins.escape',
   require 'custom.plugins.trouble',
   require 'custom.plugins.noice',
@@ -14,4 +13,6 @@ return {
   require 'custom.plugins.lualine',
   require 'custom.plugins.smear',
   require 'custom.plugins.typr',
+  require 'custom.plugins.colorscheme',
+  require 'custom.plugins.neoscroll',
 }

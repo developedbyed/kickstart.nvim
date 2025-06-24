@@ -167,7 +167,7 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 
 vim.opt.list = false
 
@@ -749,13 +749,10 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
-        --
-        -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
-        typescript = { 'biome' },
-        typescriptreact = { 'biome' },
+        ['typescript'] = { 'biome-check' },
+        ['typescriptreact'] = { 'biome-check' },
+        ['json'] = { 'biome-check' },
+        ['css'] = { 'biome-check' },
       },
     },
   },
@@ -877,7 +874,6 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'kanagawa'
     end,
   },
 
