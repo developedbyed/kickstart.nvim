@@ -15,6 +15,7 @@ return {
   require 'custom.plugins.typr',
   require 'custom.plugins.colorscheme',
   require 'custom.plugins.neoscroll',
+  require 'custom.plugins.mark-viewer',
   {
     'iamcco/markdown-preview.nvim',
     cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
