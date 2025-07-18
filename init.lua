@@ -422,6 +422,14 @@ require('lazy').setup({
             preview_cutoff = 120,
             preview_width = 0.65,
           },
+          mappings = {
+            i = {
+              ['<C-d>'] = require('trouble.sources.telescope').open,
+            },
+            n = {
+              ['<C-d>'] = require('trouble.sources.telescope').open,
+            },
+          },
         },
         -- pickers = {}
         extensions = {

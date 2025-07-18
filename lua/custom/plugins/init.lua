@@ -12,14 +12,20 @@ return {
   require 'custom.plugins.lazygit',
   require 'custom.plugins.lualine',
   require 'custom.plugins.smear',
-  require 'custom.plugins.typr',
   require 'custom.plugins.colorscheme',
   require 'custom.plugins.neoscroll',
-  require 'custom.plugins.mark-viewer',
+  require 'custom.plugins.markdown',
+  require 'custom.plugins.diff-view',
+
   {
-    'iamcco/markdown-preview.nvim',
-    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
-    ft = { 'markdown' },
-    build = ':call mkdp#util#install()',
+    'developedbyed/marko.nvim',
+    config = function()
+      require('marko').setup {
+        width = 100,
+        height = 100,
+        border = 'rounded',
+        title = ' Marko ',
+      }
+    end,
   },
 }
