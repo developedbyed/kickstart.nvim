@@ -16,16 +16,5 @@ return {
   require 'custom.plugins.neoscroll',
   require 'custom.plugins.markdown',
   require 'custom.plugins.diff-view',
-
-  {
-    'developedbyed/marko.nvim',
-    config = function()
-      require('marko').setup {
-        width = 100,
-        height = 100,
-        border = 'rounded',
-        title = ' Marko ',
-      }
-    end,
-  },
+  require 'custom.plugins.marko',
 }
