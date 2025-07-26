@@ -13,6 +13,7 @@ return {
   require 'custom.plugins.lualine',
   require 'custom.plugins.smear',
   require 'custom.plugins.colorscheme',
+  require 'custom.plugins.everfrost',
   require 'custom.plugins.neoscroll',
   require 'custom.plugins.markdown',
   require 'custom.plugins.diff-view',
